@@ -19,14 +19,14 @@ The following properties from `about:config` must be `true`
 For **Windows** you can run the following PowerShell command:
 
 ```powershell
-PowerShell -ExecutionPolicy Unrestricted -Command "iwr https://raw.githubusercontent.com/edelvarden/material-fox-updated/main/install.ps1 -useb | iex"
+PowerShell -ExecutionPolicy Unrestricted -Command "iwr https://raw.githubusercontent.com/l-pa/material-fox-updated/main/install.ps1 -useb | iex"
 ```
 
 ### Manual installation
 
 1. Go to the following url address `about:support`
 2. Find `Profile Folder` and click `Open Folder` button
-3. Download `chrome.zip` from project [releases](https://github.com/edelvarden/material-fox-updated/releases/latest) and extract into your Firefox profile directory
+3. Download `chrome.zip` from project [releases](https://github.com/l-pa/material-fox-updated/releases/latest) and extract into your Firefox profile directory
 4. Restart Firefox to apply changes
 
 ## Manual Customization
@@ -146,7 +146,7 @@ Follow this steps:
 2. Clone this repo with the following command:
 
 ```bash
-git clone https://github.com/edelvarden/material-fox-updated.git chrome
+git clone https://github.com/l-pa/material-fox-updated.git chrome
 cd chrome
 npm install
 npx husky install

@@ -58,7 +58,7 @@ body {
   --tab-icon-overlay-stroke: #{get-var("background-color-50")} !important;
 
   // grey-900-white-5-percent - 100% lt dark bg
-  --toolbar-bgcolor: #{get-var("background-color-100")} !important;
+  --toolbar-bgcolor: #{get-var("nav-bar-background")} !important;
 
   // grey-200 - primary text
   --arrowpanel-color: #{get-var("text-primary")} !important;

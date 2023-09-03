@@ -3,7 +3,8 @@
   html,
   body {
     // main bg color
-    --newtab-background-color: #{get-var("background-color-100")} !important;
+    // --newtab-background-color: #{get-var("background-color-100")} !important;
+
     // secondary controls color
     --newtab-background-color-secondary: #{get-var("background-color-0")} !important;
     // controls background-color hover
@@ -17,7 +18,8 @@
     html,
     body {
       // main bg color
-      --newtab-background-color: #{get-var("background-color-100")} !important;
+      // --newtab-background-color: #{get-var("background-color-100")} !important;
+
       // secondary controls color
       --newtab-background-color-secondary: #{get-var("background-color-100")} !important;
       // controls background-color hover
@@ -71,7 +73,6 @@
   .search-disabled .search-handoff-button {
     opacity: 0 !important;
   }
-
   .search-wrapper .search-handoff-button,
   .search-wrapper input {
     background-color: get-var("input-background-color") !important;

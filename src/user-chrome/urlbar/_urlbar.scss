@@ -70,13 +70,13 @@ body {
 @media (prefers-color-scheme: light) {
   #urlbar-background,
   #searchbar {
-    background-color: get-var("background-color-50") !important;
+    background-color: get-var("url-bar-background") !important;
   }
 
   #urlbar:is([open], [focused]) {
     #urlbar-background,
     #searchbar {
-      background-color: get-var("background-color-100") !important;
+      background-color: get-var("url-bar-background") !important;
     }
   }
 }

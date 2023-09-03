@@ -26,6 +26,10 @@ $colors: (
   "blue-200": #aecbfa,
   "blue-100": #d2e3fc,
   "blue-50": #e8f0fe,
+  "url-bar": #fff,
+  "tab-bar": #d5d9dc,
+
+  "nav-bar": #f3f3f3,
 
   // --------------------------------------------------------------------------------
   // -- Shadow
@@ -35,6 +39,45 @@ $colors: (
     rgba(get-var(shadow-color-rgb), 0.3) 0 1px 2px 0,
     rgba(get-var(shadow-color-rgb), 0.15) 0 2px 6px 2px
   )
+);
+$light-mode: (
+  // accent color
+  "accent-color": get-var(blue-500),
+  "accent-color-hover": cm(transparent, get-var(accent-color), 0.8),
+  "accent-color-transparent": cm(transparent, get-var(accent-color), 0.0837),
+  // UI background colors
+  "background-color-0": #dee1e6,
+  "background-color-50": get-var(grey-100),
+  "background-color-100": get-var("white"),
+  // UI text
+  "text-primary": get-var(grey-900),
+  "text-secondary": get-var(grey-700),
+  // primary button text color
+  "text-on-accent": get-var("white"),
+  // button, dropdown
+  "control-background-color": get-var(background-color-50),
+  "control-border-color": transparent,
+
+  // input, select, textarea
+  "input-background-color": get-var(background-color-100),
+  // menu, popups
+  "menu-background-color": get-var(background-color-100),
+  "menu-border-color": get-var(background-color-0),
+  // tab bar
+  "tab-separator-color": cm(transparent, get-var("black"), 0.3),
+  "tab-outline-color": cm(transparent, get-var("black"), 0.3),
+  "tab-opacity-hover": 1,
+  "tab-bar-background": get-var(tab-bar),
+  // nav bar
+  "icon-color-primary": get-var(grey-700),
+  "icon-color-secondary": get-var(grey-700),
+  "content-separator-color": #dbdcdd,
+  "nav-bar-background": get-var(nav-bar),
+  //url
+  "url-bar-background": get-var(url-bar),
+  // selection colors
+  "selection-text-color": get-var("black"),
+  "selection-background-color": get-var("blue-200")
 );
 
 $dark-mode: (
@@ -71,62 +114,4 @@ $dark-mode: (
   // selection colors
   "selection-text-color": get-var("white"),
   "selection-background-color": get-var(blue-500)
-);
-
-$light-mode: (
-  // accent color
-  "accent-color": get-var(blue-500),
-  "accent-color-hover": cm(transparent, get-var(accent-color), 0.8),
-  "accent-color-transparent": cm(transparent, get-var(accent-color), 0.0837),
-  // UI background colors
-  "background-color-0": #dee1e6,
-  "background-color-50": get-var(grey-100),
-  "background-color-100": get-var("white"),
-  // UI text
-  "text-primary": get-var(grey-900),
-  "text-secondary": get-var(grey-700),
-  // primary button text color
-  "text-on-accent": get-var("white"),
-  // button, dropdown
-  "control-background-color": get-var(background-color-50),
-  "control-border-color": transparent,
-
-  // input, select, textarea
-  "input-background-color": get-var(background-color-100),
-  // menu, popups
-  "menu-background-color": get-var(background-color-100),
-  "menu-border-color": get-var(background-color-0),
-  // tab bar
-  "tab-separator-color": cm(transparent, get-var("black"), 0.2),
-  "tab-outline-color": cm(transparent, get-var("black"), 0.2),
-  "tab-opacity-hover": 0.5,
-
-  // nav bar
-  "icon-color-primary": get-var(grey-700),
-  "icon-color-secondary": get-var(grey-700),
-  "content-separator-color": #dbdcdd,
-  // selection colors
-  "selection-text-color": get-var("black"),
-  "selection-background-color": get-var("blue-200")
-);
-
-// optional feature: Github theme colors
-$github-theme-colors: (
-  "accent-color": #2f81f7,
-  "background-color-0": #0d1117,
-  "background-color-50": #161b22,
-  "background-color-100": #21262d,
-  "menu-border-color": #30363d,
-);
-
-// optional feature: Dracula theme colors
-$dracula-theme-colors: (
-  "accent-color": #bd93f9,
-  "background-color-0": #282a36,
-  "background-color-50": #343746,
-  "background-color-100": #44475a,
-  "menu-background-color": get-var(background-color-0),
-  "menu-border-color": #343746,
-  "selection-text-color": get-var("black"),
-  "selection-background-color": #bd93f9,
 );
